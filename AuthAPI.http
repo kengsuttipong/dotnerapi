@@ -1,0 +1,31 @@
+// Authentication API
+@AuthAPI_HostAddress = http://localhost:5161/api/Authenticate
+// Register API
+POST {{AuthAPI_HostAddress}}/register-user
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "email": "user1@email.com",
+  "password": "User1@1234"
+}
+
+###
+
+POST {{AuthAPI_HostAddress}}/register-admin
+Content-Type: application/json
+
+{
+  "username": "iamadmin",
+  "email": "admin@email.com",
+  "password": "Admin@1234"
+}
+
+###
+POST {{AuthAPI_HostAddress}}/login
+Content-Type: application/json
+
+{
+  "username": "suttipong",
+  "password": "Suttipong@1234"
+}
